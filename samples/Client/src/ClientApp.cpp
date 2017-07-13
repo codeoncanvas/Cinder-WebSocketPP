@@ -33,6 +33,9 @@
 *
 */
 
+#define _WEBSOCKETPP_CPP11_TYPE_TRAITS_
+
+
 #include "cinder/app/App.h"
 #include "cinder/gl/gl.h"
 #include "cinder/params/Params.h"
@@ -150,7 +153,7 @@ ClientApp::ClientApp()
 
 void ClientApp::connect()
 {
-	mClient.connect( "ws://localhost:9002" );
+	mClient.connect( "ws://192.168.1.224:3030" );
 }
 
 void ClientApp::disconnect()
