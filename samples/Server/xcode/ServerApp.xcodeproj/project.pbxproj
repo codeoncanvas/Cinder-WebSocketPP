@@ -281,7 +281,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/libcinder_d.a";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/macosx/$(CONFIGURATION)/libcinder.a\"";
 				PRODUCT_NAME = ServerApp;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
@@ -305,7 +305,7 @@
 				INSTALL_PATH = "$(HOME)/Applications";
 				LD_GENERATE_MAP_FILE = YES;
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
-				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/libcinder.a";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/macosx/$(CONFIGURATION)/libcinder.a\"";
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = NO;
 				PRODUCT_NAME = ServerApp;
 				SDKROOT = macosx;
